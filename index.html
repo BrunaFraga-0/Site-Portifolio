@@ -13,10 +13,13 @@
         <nav> <!-- Seção de navegação do site (Menu do Site) -->
             <ul> <!-- Lista não ordenada para links do nosso menu -->
                 <li><a href="#sobre-mim">Sobre Mim</a></li> <!-- <li> Link para a seção "Sobre Mim" (âncora) -->
-                <li><a href="#projetos">Projetos</a></li> <!-- <a> ancoras para navegação interna (links para seções específicas do mesmo site) -->
+                <li><a href="#projetos">Projetos</a></li>
+                <!-- <a> ancoras para navegação interna (links para seções específicas do mesmo site) -->
                 <li><a href="#contatos">Contato</a></li> <!-- href links para seções específicas do mesmo site -->
-                <li><a href="https://www.google.com" target="_blank">Google</a></li>
-                <!-- targe _blank abre uma nova aba no navegador ao clicar no link externo-->
+
+                <!-- <li><a href="https://www.google.com" target="_blank">Google</a></li> [exemplo de como adicionar o link para um site externo] -->
+                <!-- targe _blank abre uma nova aba no navegador ao clicar no link extern o-->
+
             </ul>
         </nav>
     </header>
@@ -25,20 +28,24 @@
     <section id="sobre-mim"> <!-- id para linkar a seção de "Sobre Mim" -->
         <h2>Sobre Mim</h2> <!-- Título de segundo nível (Menor)-->
 
-        <img src="imagens/foto de perfil - site.jpeg" alt="Minha Foto de Perfil" width="200" title="Imagem de perfil de Bruna"> <!-- <img> Imagem (Foto de Perfil)-->
+        <img src="imagens/foto de perfil - site.jpeg" alt="Minha Foto de Perfil" width="200"
+            title="Imagem de perfil de Bruna"> <!-- <img> Imagem (Foto de Perfil)-->
         <!-- src source (caminho da imagem) alt (texto alternativo se a imagem não carregar) -->
         <!-- width (tamanho da imagem) title (texto que aparece ao passar o cursor sobre a imagem) -->
 
         <article> <!-- Artigo (Cria texto) -->
             <p> <!-- Parágrafo (Cria novo parágrafo) -->
                 Olá! Eu sou Bruna! Estudante de Análise e Desenvolvimento de Sistemas na Estácio (2º semestre) e estou
-                em transição de carreira para a tecnologia, movida pela curiosidade de entender como as soluções que
+                em transição de carreira da agricultura para a tecnologia, movida pela curiosidade de entender como as
+                soluções que
                 facilitam nossas vidas são construídas.
             </p>
 
             <p>
-                Atualmente, participo do processo seletivo para o Programa SCTec no eixo de formação "Carreira Tech - Etapa Profissionalizar", uma iniciativa da
-                Secretaria de Tecnologia do Governo de Santa Catarina (SCTI/SC) em parceria com o SENAI. Neste curso introdutório, da Etapa Primeiros Passos, estou aprendendo
+                Atualmente, participo do processo seletivo para o Programa SCTec (2026) no eixo de formação "Carreira
+                Tech - Etapa Profissionalizar", uma iniciativa da
+                Secretaria de Tecnologia do Governo de Santa Catarina (SCTI/SC) em parceria com o SENAI. Neste curso
+                introdutório, Etapa Primeiros Passos, estou aprendendo
                 sobre Front-end e Back-end, inclusive esse site faz parte do processo de colocar meus conhecimentos
                 adquiridos nesse processo em prática.
             </p>
@@ -48,8 +55,11 @@
             </p>
 
             <p>
-                Sou uma profissional detalhista e colaborativa, que acredita que o aprendizado constante é a chave para
-                a inovação. Meu objetivo atual é conquistar uma oportunidade de estágio, onde eu possa somar com a
+                Sou engajada, detalhista e colaborativa, com facilidade para aprender, curiosidade constante e muita
+                motivação para crescer na área tecnológica.
+                Estou no início da minha jornada, mas com muito foco e dedicação. Acredito que acredito que o
+                aprendizado constante é a chave para se tornar um profissional qualificado e experiente.
+                Meu objetivo atual é conquistar uma oportunidade de estágio, onde eu possa somar com a
                 equipe, aprender com especialistas e evoluir como uma desenvolvedora sólida e qualificada.
             </p>
         </article>
@@ -72,26 +82,73 @@
             <h3>Portifólio</h3>
 
             <p>
-                Este foi o primeiro site que desenvolvi estudando front-end.
+                Este é o primeiro site que estou desenvolvendo estudando front-end.
             </p>
         </article>
     </section>
 
     <footer> <!-- Rodapé do site (Informações de contato, direitos autorais, etc) -->
-        <p>© 2026 Bruna Fraga. Todos os direitos reservados.</p>
 
         <section id="contatos"> <!-- id para linkar a seção de contatos -->
             <h2>Contatos</h2>
 
             <p>Entre em contato comigo através dos links abaixo:</p>
+
             <address> <!-- <adress> Informações de contato (E-mail, telefone, etc) -->
                 E-mail: <a href="mailto:brunafraga90@gmail.com">brunafraga90@gmail.com</a> <br>
-                Tefefone: <a href="tel:+5548988776860">(48) 98877-6860</a> <br>
                 Whatsapp: <a href="https://wa.me/5548988776860">(48) 98877-6860</a> <br>
-                LinkedIn: <a href="https://www.linkedin.com/in/bruna-c-fraga/">https://www.linkedin.com/in/bruna-c-fraga</a> <br>
-            </address>
+                LinkedIn: <a
+                    href="https://www.linkedin.com/in/bruna-c-fraga/">https://www.linkedin.com/in/bruna-c-fraga</a> <br>
+                GitHub: <a href="https://github.com/BrunaFraga-0">BrunaFraga-0</a>
+            </address><br>
+
+            <p>Ou envie diretamente uma mensagem: </p>
+            
+            <form action=""> <!-- <form> Formulário de contato (Envio de mensagens) -->
+
+                <label for="nome">Nome: </label> <!-- <label> Rótulo para o campo de entrada (Nome) -->
+                <input type="text" id="nome" name="nome" required><br>
+                <!-- <input> Campo de entrada (tipo: nesse caso é texto - tem email, tel...) type (tipo de campo) id (identificador único) name (nome do campo para envio de dados) required(campo de preenchimento obrigatório)-->
+
+                <label for="email">E-mail: </label>
+                <input type="email" id="email" name="email" required><br>
+
+                <label for="whatsapp">WhatsApp: </label>
+                <input type="tel" id="whatsapp" name="whatsapp" placeholder="(XX) XXXXX-XXXX"><br>
+                <!-- placeholder (Texto de exemplo dentro do campo de entrada para o usuário digitar como deve ser) -->
+
+                <label for="assunto">Assunto: </label>
+                <select name="assunto" id="assunto">
+                    <!-- <select> Menu suspenso (Opções para selecionar o assunto da mensagem que op usuário irá enviar) -->
+                    <option value="sugestao">Sugestão</option>
+                    <!-- <option> Opção dentro do menu suspenso (value é o valor que será enviado quando a opção for selecionada) -->
+                    <option value="duvida">Dúvida</option>
+                    <option value="parceria">Parceria</option>
+                    <option value="outros">Outros</option>
+                </select>
+
+                <br>
+
+                <label for="mensagem">Mensagem: </label>
+                <textarea name="mensagem" id="mensagem" cols="40" rows="10" required></textarea>
+                <!-- <textarea> Área de texto (Campo para o usuário digitar sua mensagem) cols (número de colunas - largura do quadro de msg) rows (número de linhas - altura do quadro de msg) -->
+
+                <br>
+
+                <input type="checkbox" name="permissao" id="permissao">
+                <!-- <input> Campo de entrada (tipo: checkbox - caixa de seleção) -->
+                <label for="permissao">Autorizo o contato para fins profissionais.</label>
+
+                <br>
+
+                <input type="submit" value="Enviar Mensagem">
+                <!-- <input> Botão de envio (tipo: submit - envia o formulário) -->
+
+            </form>
 
         </section>
+
+        <p>© 2026 Bruna Fraga. Todos os direitos reservados.</p>
     </footer>
 </body>
 
