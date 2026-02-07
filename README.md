@@ -10,7 +10,7 @@ O objetivo deste site é colocar em prática os conhecimentos adquiridos em Fron
 
 O site consiste em uma página de portfólio que apresenta minha trajetória, transição de carreira e habilidades técnicas. Foi estruturado utilizando boas práticas de **HTML5 Semântico**, garantindo melhor acessibilidade e indexação.
 
-### O que foi implementado até agora:
+### ✅ O que foi implementado até agora:
 
 - **Estrutura Semântica**: Uso de tags profissionais como `<header>`, `<nav>`, `<section>`, `<article>`, `<aside>`, `<footer>`, `<form>`.
 - **Navegação por Âncoras**: Menu superior que leva o usuário diretamente para as seções "Sobre Mim", "Habilidades e Tecnologias", "Projetos" e "Contatos".
@@ -21,25 +21,18 @@ O site consiste em uma página de portfólio que apresenta minha trajetória, tr
 - **Formulário de Contato Completo**: Implementação de um formulário com campos de Nome, E-mail, WhatsApp, Assunto (menu suspenso), Área de Mensagem e Checkbox de autorização.
 - **Links Interativos**: Botões diretos para WhatsApp, LinkedIn, E-mail e GitHub.
 
----
-
-🎨 **Estilização e Design (Fase Inicial de CSS)**
+### 🎨 **Estilização e Design (Fase Inicial de CSS)**
 Nesta etapa, o foco foi transformar a estrutura bruta em uma interface mais amigável e legível:
 
-**Tipografia Profissional:** Integração da fonte Inter (Google Fonts) para garantir uma leitura moderna e confortável.
+- **Tipografia Profissional:** Integração da fonte Inter (Google Fonts) para garantir uma leitura moderna e confortável.
+- **Reset de CSS:** Uso do seletor universal para zerar margens e preenchimentos padrão, além da implementação do box-sizing: border-box para um controle preciso do layout.
+- **Layout Centralizado:** Organização do conteúdo em blocos com largura máxima de 800px e centralização automática (margin: 0 auto).
+- **Interatividade nos Links:** Personalização dos estados de repouso e hover dos links, removendo o sublinhado padrão e adicionando feedback visual (mudança de cor) ao passar o mouse.
+- **Hierarquia Visual:** Ajuste de tamanhos de fontes e alinhamento justificado para os parágrafos, melhorando a escaneabilidade do texto.
 
-**Reset de CSS:** Uso do seletor universal para zerar margens e preenchimentos padrão, além da implementação do box-sizing: border-box para um controle preciso do layout.
+<br>
 
-**Layout Centralizado:** Organização do conteúdo em blocos com largura máxima de 800px e centralização automática (margin: 0 auto).
-
-**Interatividade nos Links:** Personalização dos estados de repouso e hover dos links, removendo o sublinhado padrão e adicionando feedback visual (mudança de cor) ao passar o mouse.
-
-**Hierarquia Visual:** Ajuste de tamanhos de fontes e alinhamento justificado para os parágrafos, melhorando a escaneabilidade do texto.
-
----
-
-📝 **Próximos Passos (Backlog)**
-
+### 📝 **Próximos Passos (Backlog)**
 **[ ] Ajuste de Tabela:** Melhorar a legibilidade da tabela de habilidades com bordas sutis e preenchimento (padding).
 
 **[ ] Estilização da Imagem:** Aplicar bordas arredondadas e efeitos na foto de perfil para uma melhor integração visual.
@@ -50,12 +43,13 @@ Nesta etapa, o foco foi transformar a estrutura bruta em uma interface mais amig
 
 **[ ] Menu Responsivo:** Utilizar Flexbox para alinhar o menu horizontalmente e garantir que funcione bem em celulares.
 
-**[ ] Lógica com JavaScript:** <br> 
-[ ] Implementar validação personalizada no formulário de contato.
+**[ ] Lógica com JavaScript:**
 
-[ ] Adicionar um botão de "Voltar ao Topo".
+    [ ] Implementar validação personalizada no formulário de contato.
 
-[ ] Criar um modo escuro (Dark Mode) para alternar o tema do site.
+    [ ] Adicionar um botão de "Voltar ao Topo".
+
+    [ ] Criar um modo escuro (Dark Mode) para alternar o tema do site.
 
 ---
 
