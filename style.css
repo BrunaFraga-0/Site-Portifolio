@@ -9,7 +9,8 @@
 
 body {
     font-family: 'Inter', sans-serif; /* Define a fonte do corpo do site para uma aparência moderna e limpa */
-    background-color: rgb(233, 249, 249); /* Cor de fundo suave para melhor leitura */
+    background-color: #131f36; /* Cor de fundo suave para melhor leitura */
+    color: rgb(179, 209, 246); /* Cor do texto para garantir contraste e legibilidade */
 }
 
 header, section, footer {
@@ -18,18 +19,36 @@ header, section, footer {
     max-width: 800px; /* Limita a largura para melhor leitura (não esticar demais em telas grandes) */
 }
 
+img {
+    float: left; /* Faz a imagem flutuar para a esquerda, permitindo que o texto envolva a imagem */
+    width: 200px; /* Define a largura da imagem para um tamanho adequado */
+    margin-right: 20px; /* Adiciona um espaço à direita da imagem para separar do texto */
+    padding: 10px;
+}
+
 p {
     text-align: justify;
+    margin: 5px; /* Adiciona um pouco de espaço entre os parágrafos para melhor legibilidade */
+    padding: 10px; /* Adiciona preenchimento interno para melhorar a aparência dos parágrafos */
+    /*border: 1px solid #c1d18c; /* Adiciona uma borda leve para destacar os parágrafos */
+    /*border-radius: 5px; */ /* Arredonda os cantos da borda para um visual mais suave */
+    /*background-color: #8dc3f5; /* Cor de fundo clara para os parágrafos para melhorar a legibilidade */
+}
+
+aside {
+    margin: 20px; /* Adiciona um pouco de espaço acima e abaixo para melhor separação visual */
+    padding: 0px; /* Adiciona preenchimento interno para melhorar a aparência*/
+    padding-left: 20px; /* Adiciona preenchimento interno para melhorar a aparência*/
 }
 
 a { /* Estilo para links */
-    color: rgb(0, 0, 0); /* Cor dos links (preto) */
+    color: #c1d18c; /* Cor dos links (preto) */
     text-decoration: none; /* Remove o sublinhado dos links para um visual mais limpo */
 }
 
 a:hover { /* Estilo para links quando o mouse passa por cima */
     text-decoration: underline; /* Adiciona um sublinhado quando o mouse passa por cima para indicar que é clicável */
-    color: blue; /* Muda a cor do link para azul quando o mouse passa por cima para destacar */
+    color: white; /* Muda a cor do link para branco quando o mouse passa por cima para destacar */
 }
 
 /*background-color:cadetblue;*/
@@ -38,17 +57,31 @@ h1 {
     text-align: center;
     font-size: xx-large;
     font-weight: bold;
-    text-decoration: underline;
+    margin: 5px; /* Adiciona um pouco de espaço entre os parágrafos para melhor legibilidade */
+    padding: 10px; /* Adiciona preenchimento interno para melhorar a aparência dos parágrafos */
+    border: 2px solid #c1d18c; /* Adiciona uma borda leve para destacar os parágrafos */
+    border-radius: 5px; /* Arredonda os cantos da borda para um visual mais suave */
+    
 }
 
 h2 {
-    text-align: left;
+    
+    text-align: left; /* Alinha o texto à esquerda para uma leitura mais tradicional */
     font-size: x-large;
     font-weight: bold;
-    text-decoration: underline;
+    color:  #c1d18c;
+    margin: 5px; /* Adiciona um pouco de espaço entre os parágrafos para melhor legibilidade */
+    padding: 10px; /* Adiciona preenchimento interno para melhorar a aparência dos parágrafos */
+    border: 1px solid #c1d18c; /* Adiciona uma borda leve para destacar os parágrafos */
+    border-radius: 5px; /* Arredonda os cantos da borda para um visual mais suave */
+    
 }
 
 h3 {
     text-align: left;
     font-size: large;
+    font-weight: bold;
+    text-decoration: underline;
+    margin: 5px; /* Adiciona um pouco de espaço entre os parágrafos para melhor legibilidade */
+    padding: 2px 0; /* Adiciona preenchimento interno para melhorar a aparência dos parágrafos */
 }
