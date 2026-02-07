@@ -1,0 +1,54 @@
+/* Importando uma fonte moderna do Google */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap');
+
+* { /* Seletor universal para aplicar estilos a todos os elementos do site */
+    margin: 0; /* Remove as margens padrão de todos os elementos para evitar espaçamento indesejado */
+    padding: 0; /* Remove o preenchimento padrão de todos os elementos para evitar espaçamento indesejado */
+    box-sizing: border-box; /* Define o modelo de caixa para incluir bordas e preenchimento no tamanho total do elemento, facilitando o controle do layout */
+}
+
+body {
+    font-family: 'Inter', sans-serif; /* Define a fonte do corpo do site para uma aparência moderna e limpa */
+    background-color: rgb(233, 249, 249); /* Cor de fundo suave para melhor leitura */
+}
+
+header, section, footer {
+    padding: 20px; /* Espaçamento interno para melhor visualização, para o texto não encostar na borda*/
+    margin: 0 auto; /* Centraliza esses blocos */
+    max-width: 800px; /* Limita a largura para melhor leitura (não esticar demais em telas grandes) */
+}
+
+p {
+    text-align: justify;
+}
+
+a { /* Estilo para links */
+    color: rgb(0, 0, 0); /* Cor dos links (preto) */
+    text-decoration: none; /* Remove o sublinhado dos links para um visual mais limpo */
+}
+
+a:hover { /* Estilo para links quando o mouse passa por cima */
+    text-decoration: underline; /* Adiciona um sublinhado quando o mouse passa por cima para indicar que é clicável */
+    color: blue; /* Muda a cor do link para azul quando o mouse passa por cima para destacar */
+}
+
+/*background-color:cadetblue;*/
+
+h1 {
+    text-align: center;
+    font-size: xx-large;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+h2 {
+    text-align: left;
+    font-size: x-large;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+h3 {
+    text-align: left;
+    font-size: large;
+}
