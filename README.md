@@ -24,13 +24,13 @@ O site consiste em uma página de portfólio que apresenta minha trajetória, tr
 ### 🎨 **Estilização e Design (Fase Inicial de CSS)**
 Nesta etapa, o foco foi transformar a estrutura bruta em uma interface mais amigável e legível:
 
-- **Tipografia Profissional:** Integração da fonte Inter (Google Fonts) para garantir uma leitura moderna e confortável.
+- **Tipografia Profissional:** Integração da fonte Inter (Google Fonts), com alinhamento justificado e ajustes de margem para garantir uma leitura moderna e confortável.
 - **Reset de CSS:** Uso do seletor universal para zerar margens e preenchimentos padrão, além da implementação do box-sizing: border-box para um controle preciso do layout.
 - **Layout Centralizado:** Organização do conteúdo em blocos com largura máxima de 800px e centralização automática (margin: 0 auto).
-- **Interatividade nos Links:** Personalização dos estados de repouso e hover dos links, removendo o sublinhado padrão e adicionando feedback visual (mudança de cor) ao passar o mouse.
-- **Hierarquia Visual:** Ajuste de tamanhos de fontes e alinhamento justificado para os parágrafos, melhorando a escaneabilidade do texto.
-
-<br>
+- **Interatividade nos Links:** Personalização dos estados de repouso e hover dos links, removendo o sublinhado padrão e adicionando feedback visual (mudança de cor) ao passar o mouse, com foco em acessibilidade e contraste.
+- **Estilização de Títulos:** Aplicação de bordas personalizadas e arredondadas (border-radius) nos títulos para criar uma hierarquia visual clara e moderna.
+- **Paleta de Cores Customizada:** Implementação de um fundo profundo (#131f36) com destaques em tons pastéis (#c1d18c), garantindo um contraste sofisticado e profissional.
+- **Integração de Imagem com Float:** Implementação da propriedade float: left na foto de perfil para permitir o envolvimento do texto, com ajustes de margin e padding para garantir o distanciamento correto entre a imagem e os parágrafos.
 
 ### 📝 **Próximos Passos (Backlog)**
 **[ ] Ajuste de Tabela:** Melhorar a legibilidade da tabela de habilidades com bordas sutis e preenchimento (padding).
