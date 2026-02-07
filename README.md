@@ -23,12 +23,48 @@ O site consiste em uma página de portfólio que apresenta minha trajetória, tr
 
 ---
 
+🎨 **Estilização e Design (Fase Inicial de CSS)**
+Nesta etapa, o foco foi transformar a estrutura bruta em uma interface mais amigável e legível:
+
+**Tipografia Profissional:** Integração da fonte Inter (Google Fonts) para garantir uma leitura moderna e confortável.
+
+**Reset de CSS:** Uso do seletor universal para zerar margens e preenchimentos padrão, além da implementação do box-sizing: border-box para um controle preciso do layout.
+
+**Layout Centralizado:** Organização do conteúdo em blocos com largura máxima de 800px e centralização automática (margin: 0 auto).
+
+**Interatividade nos Links:** Personalização dos estados de repouso e hover dos links, removendo o sublinhado padrão e adicionando feedback visual (mudança de cor) ao passar o mouse.
+
+**Hierarquia Visual:** Ajuste de tamanhos de fontes e alinhamento justificado para os parágrafos, melhorando a escaneabilidade do texto.
+
+---
+
+📝 **Próximos Passos (Backlog)**
+
+**[ ] Ajuste de Tabela:** Melhorar a legibilidade da tabela de habilidades com bordas sutis e preenchimento (padding).
+
+**[ ] Estilização da Imagem:** Aplicar bordas arredondadas e efeitos na foto de perfil para uma melhor integração visual.
+
+**[ ] Ajustes de Tipografia:** Configurar o line-height (espaçamento entre linhas) para tornar a leitura dos parágrafos mais fluida.
+
+**[ ] Layout Moderno (Cards):** Separar as seções em blocos visuais distintos com fundos brancos e sombras suaves.
+
+**[ ] Menu Responsivo:** Utilizar Flexbox para alinhar o menu horizontalmente e garantir que funcione bem em celulares.
+
+**[ ] Lógica com JavaScript:** <br> 
+[ ] Implementar validação personalizada no formulário de contato.
+
+[ ] Adicionar um botão de "Voltar ao Topo".
+
+[ ] Criar um modo escuro (Dark Mode) para alternar o tema do site.
+
+---
+
 ## 🛠️ Tecnologias Utilizadas
 
 -> Estruturação de conteúdo:<br>
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)   
 
--> Estilização e layout(em desenvolvimento):<br>
+-> Estilização e layou:<br>
 ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white) 
 
 -> Interatividade e lógica (em desenvolvimento):<br>
@@ -45,7 +81,7 @@ O site consiste em uma página de portfólio que apresenta minha trajetória, tr
 
 ---
 
-## 🚀 Como visualizar o projeto
+## 🌐 Como visualizar o projeto
 
 Você pode acompanhar a evolução do site através deste link:
 
@@ -53,7 +89,7 @@ Você pode acompanhar a evolução do site através deste link:
 
 ---
 
-📅 *Atualizado em 06 de Fevereiro de 2026*
+📅 *Atualizado em 07 de Fevereiro de 2026*
 
 ---
 
