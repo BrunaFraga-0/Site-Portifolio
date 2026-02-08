@@ -9,23 +9,46 @@
 
 body {
     font-family: 'Inter', sans-serif; /* Define a fonte do corpo do site para uma aparência moderna e limpa */
-    background-color: #131f36; /* Cor de fundo profundo para melhor leitura */
+    background-color: #3961ad; /* Cor de fundo profundo para melhor leitura */
     color: rgb(179, 209, 246); /* Cor do texto para garantir contraste e legibilidade */
 }
 
 header {
-
+    display: flex; /* Usa Flexbox para organizar o conteúdo do cabeçalho */
+    flex-direction: column; /* Organiza os itens do cabeçalho em uma coluna */
+    align-items: center; /* Centraliza os itens do cabeçalho horizontalmente */
+    gap: 20px; /* Adiciona um espaço entre os itens do cabeçalho para melhor visualização */
+    padding: 20px; /* Adiciona preenchimento interno para melhorar a aparência do cabeçalho */
+    background-color: #131f36; /* Cor de fundo para o cabeçalho para destacá-lo do restante do site */
+    /*border-bottom: 2px solid #c1d18c; /* Adiciona uma borda inferior para separar visualmente o cabeçalho do conteúdo principal */
+    position: sticky; /* Faz o cabeçalho ficar fixo no topo da página ao rolar */
+    top: 0; /* Define a posição do cabeçalho para o topo da página */
+    z-index: 1000; /* Garante que o cabeçalho fique acima de outros elementos ao rolar */
 }
 
 h1 {
-    text-align: center;
-    font-size: xx-large;
-    font-weight: bold;
-    margin: 5px; /* Adiciona um pouco de espaço para melhor legibilidade */
-    padding: 10px; /* Adiciona preenchimento interno para melhorar a aparência do título */
-    border: 2px solid #c1d18c; /* Adiciona uma borda leve para destacar o título principal */
+    display: flex; /* Usa Flexbox para organizar o título principal */
+    flex-direction: column; /* Organiza o título em uma coluna para melhor legibilidade */  
+    align-items: center; /* Centraliza o título horizontalmente */
+    text-align: center; /* Alinha o texto do título ao centro para uma aparência mais equilibrada */
+    font-size: xx-large; /* Define um tamanho de fonte grande para o título principal */
+    font-weight: bold; /* Define o peso da fonte como negrito para destacar o título principal */
+    margin: 10px 0; /* Adiciona um pouco de espaço para melhor legibilidade */
+    padding: 15px; /* Adiciona preenchimento interno para melhorar a aparência do título */
+    /*border: 2px solid #c1d18c; /* Adiciona uma borda leve para destacar o título principal */
     border-radius: 5px; /* Arredonda os cantos da borda para um visual mais suave */
     text-transform: uppercase; /* Transforma o texto em maiúsculas para destaque */
+}
+
+.titulo-categoria {
+    font-size: 0.5em; /* Metade do tamanho do H1 */
+    letter-spacing: 2px; /* Adiciona espaçamento entre as letras para um visual mais moderno */
+    color: #c1d18c; /* Cor para a categoria do título (amarelo) */
+}
+
+.titulo-nome {
+    font-size: 1.2em; /* Tamanho maior para o nome */
+    color: #ffffff; /* Cor para o nome (branco) */
 }
 
 .menu-principal {
@@ -41,7 +64,9 @@ h1 {
     transition: 0,3s; /* Adiciona uma transição suave para efeitos de hover */
 }
 
-header, section, footer {
+
+
+section, footer {
     padding: 20px; /* Espaçamento interno para melhor visualização, para o texto não encostar na borda*/
     margin: 0 auto; /* Centraliza esses blocos */
     max-width: 800px; /* Limita a largura para melhor leitura (não esticar demais em telas grandes) */
