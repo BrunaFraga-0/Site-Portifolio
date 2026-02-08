@@ -9,18 +9,24 @@
 
 body {
     font-family: 'Inter', sans-serif; /* Define a fonte do corpo do site para uma aparência moderna e limpa */
-    background-color: #3961ad; /* Cor de fundo profundo para melhor leitura */
-    color: rgb(179, 209, 246); /* Cor do texto para garantir contraste e legibilidade */
+    background-color: #dee6f3; /* Cor de fundo profundo para melhor leitura */
+    color: #131f36; /* Cor do texto para garantir contraste e legibilidade */
+    display: flex; 
+    flex-direction: column;
+    min-height: 100vh; /* 100% da altura da Viewport (tela) */
 }
 
-header {
+header, footer {
     display: flex; /* Usa Flexbox para organizar o conteúdo do cabeçalho */
     flex-direction: column; /* Organiza os itens do cabeçalho em uma coluna */
     align-items: center; /* Centraliza os itens do cabeçalho horizontalmente */
-    gap: 20px; /* Adiciona um espaço entre os itens do cabeçalho para melhor visualização */
     padding: 20px; /* Adiciona preenchimento interno para melhorar a aparência do cabeçalho */
     background-color: #131f36; /* Cor de fundo para o cabeçalho para destacá-lo do restante do site */
     /*border-bottom: 2px solid #c1d18c; /* Adiciona uma borda inferior para separar visualmente o cabeçalho do conteúdo principal */
+    }
+
+header {
+    gap: 20px; /* Adiciona um espaço entre os itens do cabeçalho para melhor visualização */
     position: sticky; /* Faz o cabeçalho ficar fixo no topo da página ao rolar */
     top: 0; /* Define a posição do cabeçalho para o topo da página */
     z-index: 1000; /* Garante que o cabeçalho fique acima de outros elementos ao rolar */
@@ -61,12 +67,12 @@ h1 {
 .menu-principal a { /* Estilo para os links do menu principal usando o seletor classe e descendência */
     font-size: large;
     text-transform: uppercase; /* Transforma o texto em maiúsculas para destaque */
-    transition: 0,3s; /* Adiciona uma transição suave para efeitos de hover */
+    transition: 0.3s; /* Adiciona uma transição suave para efeitos de hover */
 }
 
 
 
-section, footer {
+section {
     padding: 20px; /* Espaçamento interno para melhor visualização, para o texto não encostar na borda*/
     margin: 0 auto; /* Centraliza esses blocos */
     max-width: 800px; /* Limita a largura para melhor leitura (não esticar demais em telas grandes) */
@@ -181,11 +187,6 @@ a:hover { /* Estilo para links quando o mouse passa por cima */
 }
 
 
-footer {
-
-}
-
-
 address {
 
 }
@@ -220,7 +221,7 @@ input[type="submit"] {
 
 }
 
-
-footer p {
-
+footer {
+    margin-top: auto; /* Garante que fique no fim da página */
+    color: #c1d18c; /* Cor para o direitos autorais (branco) */
 }
