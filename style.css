@@ -25,7 +25,7 @@ h1 {
     padding: 10px; /* Adiciona preenchimento interno para melhorar a aparência do título */
     border: 2px solid #c1d18c; /* Adiciona uma borda leve para destacar o título principal */
     border-radius: 5px; /* Arredonda os cantos da borda para um visual mais suave */
-    
+    text-transform: uppercase; /* Transforma o texto em maiúsculas para destaque */
 }
 
 .menu-principal {
@@ -33,6 +33,12 @@ h1 {
     justify-content: center; /* Centraliza os itens do menu horizontalmente */
     gap: 20px; /* Adiciona um espaço entre os itens do menu para melhor visualização */
     list-style: none; /* Remove os marcadores padrão da lista para um visual mais limpo */
+}
+
+.menu-principal a { /* Estilo para os links do menu principal usando o seletor classe e descendência */
+    font-size: large;
+    text-transform: uppercase; /* Transforma o texto em maiúsculas para destaque */
+    transition: 0,3s; /* Adiciona uma transição suave para efeitos de hover */
 }
 
 header, section, footer {
