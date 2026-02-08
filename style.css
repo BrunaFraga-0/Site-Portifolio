@@ -28,12 +28,11 @@ h1 {
     
 }
 
-nav {
-
-}
-
-nav ul li a {
-
+.menu-principal {
+    display: flex; /* Usa Flexbox para organizar os itens do menu em linha */
+    justify-content: center; /* Centraliza os itens do menu horizontalmente */
+    gap: 20px; /* Adiciona um espaço entre os itens do menu para melhor visualização */
+    list-style: none; /* Remove os marcadores padrão da lista para um visual mais limpo */
 }
 
 header, section, footer {
@@ -192,5 +191,5 @@ input[type="submit"] {
 
 
 footer p {
-    
+
 }
