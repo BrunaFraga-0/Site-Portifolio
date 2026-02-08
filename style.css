@@ -71,6 +71,16 @@ h1 {
     transition: 0.3s; /* Adiciona uma transição suave para efeitos de hover */
 }
 
+main {
+    flex: 1; /* Faz o conteúdo crescer e empurrar o footer para o final da tela */
+    width: 100%; /* Faz a cor esticar até o fim da tela */  
+    max-width: 800px; /* Mantém o texto centralizado e fácil de ler */
+    margin: 0 auto; /* Centraliza o bloco principal */
+    display: flex;
+    flex-direction: column; /* Garante que as seções fiquem uma embaixo da outra */
+    gap: 40px; /* Cria um espaço uniforme entre as seções (Sobre Mim, Projetos, etc) */
+    padding: 20px 0; /* Espaço em cima e embaixo para não colar no header/footer */
+}
 
 
 section {
