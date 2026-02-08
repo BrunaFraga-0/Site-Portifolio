@@ -9,8 +9,31 @@
 
 body {
     font-family: 'Inter', sans-serif; /* Define a fonte do corpo do site para uma aparência moderna e limpa */
-    background-color: #131f36; /* Cor de fundo suave para melhor leitura */
+    background-color: #131f36; /* Cor de fundo profundo para melhor leitura */
     color: rgb(179, 209, 246); /* Cor do texto para garantir contraste e legibilidade */
+}
+
+header {
+
+}
+
+h1 {
+    text-align: center;
+    font-size: xx-large;
+    font-weight: bold;
+    margin: 5px; /* Adiciona um pouco de espaço para melhor legibilidade */
+    padding: 10px; /* Adiciona preenchimento interno para melhorar a aparência do título */
+    border: 2px solid #c1d18c; /* Adiciona uma borda leve para destacar o título principal */
+    border-radius: 5px; /* Arredonda os cantos da borda para um visual mais suave */
+    
+}
+
+nav {
+
+}
+
+nav ul li a {
+
 }
 
 header, section, footer {
@@ -19,11 +42,28 @@ header, section, footer {
     max-width: 800px; /* Limita a largura para melhor leitura (não esticar demais em telas grandes) */
 }
 
+h2 {
+    
+    text-align: left; /* Alinha o texto à esquerda para uma leitura mais tradicional */
+    font-size: x-large;
+    font-weight: bold;
+    color:  #c1d18c;
+    margin: 5px; /* Adiciona um pouco de espaço para melhor legibilidade */
+    padding: 10px; /* Adiciona preenchimento interno para melhorar a aparência dos títulos secundários */
+    border: 1px solid #c1d18c; /* Adiciona uma borda leve para destacar os títulos secundários */
+    border-radius: 5px; /* Arredonda os cantos da borda para um visual mais suave */
+    
+}
+
 img {
     float: left; /* Faz a imagem flutuar para a esquerda, permitindo que o texto envolva a imagem */
     width: 200px; /* Define a largura da imagem para um tamanho adequado */
     margin-right: 20px; /* Adiciona um espaço à direita da imagem para separar do texto */
     padding: 10px;
+}
+
+article {
+
 }
 
 p {
@@ -41,10 +81,52 @@ aside {
     padding-left: 20px; /* Adiciona preenchimento interno para melhorar a aparência*/
 }
 
+
+aside h3 {
+
+}
+
+
+aside ul li {
+
+}
+
+
+table {
+
+}
+
+
+thead {
+
+}
+
+
+tbody {
+
+}
+
+
+tr {
+
+}
+
+
+th {
+
+}
+
+
+td {
+
+}
+
+
 a { /* Estilo para links */
-    color: #c1d18c; /* Cor dos links (preto) */
+    color: #c1d18c; /* Cor dos links (amarelo) */
     text-decoration: none; /* Remove o sublinhado dos links para um visual mais limpo */
 }
+
 
 a:hover { /* Estilo para links quando o mouse passa por cima */
     text-decoration: underline; /* Adiciona um sublinhado quando o mouse passa por cima para indicar que é clicável */
@@ -53,35 +135,62 @@ a:hover { /* Estilo para links quando o mouse passa por cima */
 
 /*background-color:cadetblue;*/
 
-h1 {
-    text-align: center;
-    font-size: xx-large;
-    font-weight: bold;
-    margin: 5px; /* Adiciona um pouco de espaço entre os parágrafos para melhor legibilidade */
-    padding: 10px; /* Adiciona preenchimento interno para melhorar a aparência dos parágrafos */
-    border: 2px solid #c1d18c; /* Adiciona uma borda leve para destacar os parágrafos */
-    border-radius: 5px; /* Arredonda os cantos da borda para um visual mais suave */
-    
+#projetos article {
+
 }
 
-h2 {
-    
-    text-align: left; /* Alinha o texto à esquerda para uma leitura mais tradicional */
-    font-size: x-large;
-    font-weight: bold;
-    color:  #c1d18c;
-    margin: 5px; /* Adiciona um pouco de espaço entre os parágrafos para melhor legibilidade */
-    padding: 10px; /* Adiciona preenchimento interno para melhorar a aparência dos parágrafos */
-    border: 1px solid #c1d18c; /* Adiciona uma borda leve para destacar os parágrafos */
-    border-radius: 5px; /* Arredonda os cantos da borda para um visual mais suave */
-    
-}
 
-h3 {
+#projetos h3 {
     text-align: left;
     font-size: large;
     font-weight: bold;
     text-decoration: underline;
-    margin: 5px; /* Adiciona um pouco de espaço entre os parágrafos para melhor legibilidade */
-    padding: 2px 0; /* Adiciona preenchimento interno para melhorar a aparência dos parágrafos */
+    margin: 5px; /* Adiciona um pouco de espaço para melhor legibilidade */
+    padding: 2px 0; /* Adiciona preenchimento interno para melhorar a aparência dos subtítulos */
+
+}
+
+
+footer {
+
+}
+
+
+address {
+
+}
+
+
+form {
+
+}
+
+
+label {
+
+}
+
+
+input {
+
+}
+
+
+select {
+
+}
+
+
+textarea {
+
+}
+
+
+input[type="submit"] {
+
+}
+
+
+footer p {
+    
 }
