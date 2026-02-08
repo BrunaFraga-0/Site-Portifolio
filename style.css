@@ -23,7 +23,8 @@ header, footer {
     padding: 20px; /* Adiciona preenchimento interno para melhorar a aparência do cabeçalho */
     background-color: #131f36; /* Cor de fundo para o cabeçalho para destacá-lo do restante do site */
     /*border-bottom: 2px solid #c1d18c; /* Adiciona uma borda inferior para separar visualmente o cabeçalho do conteúdo principal */
-    }
+    width: 100%; /* Faz o azul esticar até o fim da tela */    
+}
 
 header {
     gap: 20px; /* Adiciona um espaço entre os itens do cabeçalho para melhor visualização */
@@ -76,6 +77,7 @@ section {
     padding: 20px; /* Espaçamento interno para melhor visualização, para o texto não encostar na borda*/
     margin: 0 auto; /* Centraliza esses blocos */
     max-width: 800px; /* Limita a largura para melhor leitura (não esticar demais em telas grandes) */
+    width: 100%;
 }
 
 h2 {
