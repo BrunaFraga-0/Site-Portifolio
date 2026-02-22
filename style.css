@@ -91,7 +91,6 @@ section {
 }
 
 h2 {
-    
     text-align: left; /* Alinha o texto à esquerda para uma leitura mais tradicional */
     font-size: x-large;
     font-weight: bold;
@@ -103,11 +102,19 @@ h2 {
     
 }
 
-img {
-    float: left; /* Faz a imagem flutuar para a esquerda, permitindo que o texto envolva a imagem */
+.flexbox-sobre-mim {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+
+.flexbox-sobre-mim img {
     width: 200px; /* Define a largura da imagem para um tamanho adequado */
-    margin-right: 20px; /* Adiciona um espaço à direita da imagem para separar do texto */
     padding: 10px;
+    flex-shrink: 1;
+    border-radius: 15px;
 }
 
 article {
