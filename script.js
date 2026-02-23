@@ -49,6 +49,13 @@ function validacaoFormulario() {
   return true;
 }
 
+document.getElementById('formulario').addEventListener('submit', function(evento){
+    if(!validacaoFormulario()){
+        evento.preventDefault(); // Trava o envio da mensagem se houver erro (bordas vermelhas)
+    }
+    // Se a validação passar, ele NÃO entra no if e o Formspree envia os dados sozinho!
+});
+
 document.getElementById("formulario").addEventListener("submit", function (evento) {
     evento.preventDefault();
     if (validacaoFormulario()) {
