@@ -272,35 +272,62 @@ a:hover { /* Estilo para links quando o mouse passa por cima */
 
 
 form {
-
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    max-width: 500px; /* Mantém o formulário em um tamanho bom */
+    margin: 0 auto;   /* Centraliza o formulário na página */
+    align-items: flex-start; /* Isso impede que o botão estique para a largura toda */
 }
 
 
 label {
+    display: block; 
+    color: #131f36;
+    font-weight: bold;
+    text-align: left;
+}
 
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    background-color: #dee6f3;
+    color: #131f36;
+    border: 1px solid #131f36;
+    border-radius: 8px;
+    box-sizing: border-box; /* Garante que o padding não aumente a largura */
 }
 
 
-input {
+input:focus, textarea:focus { /* Efeito de foco para quando você clica no campo */
+    outline: none;
+    box-shadow: 0 0 10px #c1d18c;
+}
 
+input[type="checkbox"] {
+    width: auto;
+    display: inline-block;
+    margin-right: 10px;
 }
 
 
-select {
-
+#botao {
+    background-color: #131f36;
+    color: #c1d18c;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    padding: 15px;
+    transition: 0.3s;
+    margin-top: 10px;
 }
 
-
-textarea {
-
-}
-
-
-input[type="submit"] {
-
+#botao:hover {
+    transform: scale(1.02); /* Dá um leve aumento ao passar o mouse */
+    outline: 5px solid #c1d18c;
 }
 
 footer {
     margin-top: auto; /* Garante que fique no fim da página */
-    color: #c1d18c; /* Cor para o direitos autorais (branco) */
+    color: #c1d18c; 
 }
