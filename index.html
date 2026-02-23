@@ -1,47 +1,38 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 
-<head> <!-- Cabeçalho do documento (Informações sobre o site) -->
+<head> 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bruna Fraga - Portfólio</title> <!-- Título da Página (Navegador) -->
-    <link rel="stylesheet" href="style.css" /> <!-- Link para o arquivo CSS externo -->
+    <title>Bruna Fraga - Portfólio</title> 
+    <link rel="stylesheet" href="style.css" /> 
 </head>
 
-<body> <!-- Corpo do documento (Conteúdo visível do site) -->
-    <header> <!-- Cabeçalho do site (Informações principais e navegação) -->
-        <h1> <!-- Título de primeiro nível (Principal)-->
+<body> 
+    <header> 
+        <h1> 
             <span class="titulo-categoria">Portfólio</span>
             <span class="titulo-nome">Bruna Caroline Fraga</span>
-            <!-- <span> Elemento em linha para organizar o título principal em partes distintas (Categoria e Nome) -->
         </h1>
-        <nav> <!-- Seção de navegação do site (Menu do Site) -->
-            <ul class="menu-principal"> <!-- Lista não ordenada para links do nosso menu -->
-                <li><a href="#sobre-mim">Sobre Mim</a></li> <!-- <li> Link para a seção "Sobre Mim" (âncora) -->
+        <nav> 
+            <ul class="menu-principal"> 
+                <li><a href="#sobre-mim">Sobre Mim</a></li> 
                 <li><a href="#habilidades">Habilidades e Tecnologias</a></li>
                 <li><a href="#projetos">Projetos</a></li>
-                <!-- <a> ancoras para navegação interna (links para seções específicas do mesmo site) -->
-                <li><a href="#contatos">Contato</a></li> <!-- href links para seções específicas do mesmo site -->
-
-                <!-- <li><a href="https://www.google.com" target="_blank">Google</a></li> [exemplo de como adicionar o link para um site externo] -->
-                <!-- targe _blank abre uma nova aba no navegador ao clicar no link extern o-->
+                <li><a href="#contatos">Contato</a></li> 
             </ul>
         </nav>
     </header>
 
-    <main> <!-- Seção principal do site -->
-        <section id="sobre-mim"> <!-- id para linkar a seção de "Sobre Mim" -->
-            <h2>Sobre Mim</h2> <!-- Título de segundo nível (Menor)-->
+    <main> 
+        <section id="sobre-mim"> 
+            <h2>Sobre Mim</h2> 
 
             <div class="flexbox-sobre-mim">
-                <img src="imagens/foto de perfil - site.jpeg" alt="Minha Foto de Perfil"
-                    title="Imagem de perfil de Bruna">
-                <!-- <img> Imagem (Foto de Perfil)-->
-                <!-- src source (caminho da imagem) alt (texto alternativo se a imagem não carregar) -->
-                <!-- title (nome da imagem ao passar o cursor por cima)-->
-
-                <article id="texto-sobre-mim"> <!-- Artigo (Cria texto) -->
-                    <p> <!-- Parágrafo (Cria novo parágrafo) -->
+                <img src="imagens/foto de perfil - site.jpeg" alt="Minha Foto de Perfil" title="Imagem de perfil de Bruna">
+                
+                <article id="texto-sobre-mim"> 
+                    <p> 
                         Olá, eu sou Bruna! Estudante de Análise e Desenvolvimento de Sistemas na Estácio (2º semestre) e
                         estou
                         em transição de carreira para a área de tecnologia, movida pela curiosidade de entender como
@@ -86,8 +77,8 @@
 
             </div>
 
-            <aside id="softskill"> <!-- Seção lateral (Informações adicionais) -->
-                <h3>Softskills:</h3> <!-- Título de terceiro nível (Menor - Subtítulo)-->
+            <aside id="softskill"> 
+                <h3>Softskills:</h3> 
                 <ul class="softskill-lista">
                     <li class="softskill-card">Organização e Proatividade</li>
                     <li class="softskill-card">Trabalho em Equipe</li>
@@ -99,22 +90,22 @@
         </section>
 
 
-        <section id="habilidades"> <!-- id para linkar a seção de habilidades -->
+        <section id="habilidades"> 
 
-            <h2>Habilidades e Tecnologias</h2>
+            <h2>Habilidades Técnicas</h2>
 
-            <table class="table"> <!-- <table> Tabela (Organização de informações em formato tabular) -->
-                <thead id="table-head"> <!-- <thead> Cabeçalho da tabela (Definição dos títulos das colunas) -->
-                    <tr> <!-- <tr> Linha da tabela (Cabeçalho) -->
-                        <th>Tecnologia</th> <!-- <th> Célula de cabeçalho (Título da coluna) -->
+            <table class="table"> 
+                <thead id="table-head"> 
+                    <tr> 
+                        <th>Tecnologia</th> 
                         <th>Nível</th>
                         <th>Descrição</th>
                     </tr>
                 </thead>
 
-                <tbody id="table-body"> <!-- <tbody> Corpo da tabela -->
-                    <tr> <!-- <tr> Linha da tabela (Dados) -->
-                        <td>HTML</td> <!-- <td> Célula de dados (Conteúdo da tabela) -->
+                <tbody id="table-body"> 
+                    <tr> 
+                        <td>HTML</td> 
                         <td>Iniciante</td>
                         <td>Capaz de construir estruturas de páginas web semânticas e responsivas.</td>
                     </tr>
@@ -122,21 +113,21 @@
                     <tr>
                         <td>CSS</td>
                         <td>Iniciante</td>
-                        <td>Experiência em estilizar páginas web com CSS, incluindo layout responsivo e design moderno.
+                        <td>Experiência em estilizar páginas web com Flexbox, incluindo layout responsivo e design moderno.
                         </td>
                     </tr>
 
                     <tr>
                         <td>JavaScript</td>
                         <td>Básico</td>
-                        <td>Desenvolvimento de script do lado cliente para inscrições.</td>
+                        <td>Implementação de lógica de validação de formulários e manipulação do DOM.</td>
                     </tr>
                 </tbody>
             </table>
         </section>
 
 
-        <section id="projetos"> <!-- id para linkar a seção de projetos -->
+        <section id="projetos"> 
             <h2>Projetos</h2>
 
             <div class="projetos-container">
@@ -155,12 +146,12 @@
         </section>
 
 
-        <section id="contatos"> <!-- id para linkar a seção de contatos -->
+        <section id="contatos"> 
             <h2>Contatos</h2>
 
             <p class="p-contato">Entre em contato comigo através dos links abaixo:</p>
 
-            <address class="contato-lista"> <!-- <adress> Informações de contato (E-mail, telefone, etc) -->
+            <address class="contato-lista"> 
                 <div class="contato-item">
                     <strong>E-mail:</strong>
                     <a href="mailto:brunafraga90@gmail.com">brunafraga90@gmail.com</a>
@@ -183,24 +174,19 @@
             <p class="p-contato">Ou envie diretamente uma mensagem: </p>
 
             <form id="formulario" novalidate action="https://formspree.io/f/brunafraga90@gmail.com" method="POST">
-                <!-- <form> Formulário de contato (Envio de mensagens) -->
 
-                <label for="nome">Nome: </label> <!-- <label> Rótulo para o campo de entrada (Nome) -->
+                <label for="nome">Nome: </label> 
                 <input type="text" id="nome" name="nome" required>
-                <!-- <input> Campo de entrada (tipo: nesse caso é texto - tem email, tel...) type (tipo de campo) id (identificador único) name (nome do campo para envio de dados) required(campo de preenchimento obrigatório)-->
 
                 <label for="email">E-mail: </label>
                 <input type="email" id="email" name="email" placeholder="nome@email.com" required>
 
                 <label for="whatsapp">WhatsApp: </label>
                 <input type="tel" id="whatsapp" name="whatsapp" placeholder="(XX) XXXXX-XXXX">
-                <!-- placeholder (Texto de exemplo dentro do campo de entrada para o usuário digitar como deve ser) -->
 
                 <label for="assunto">Assunto: </label>
                 <select name="assunto" id="assunto">
-                    <!-- <select> Menu suspenso (Opções para selecionar o assunto da mensagem que op usuário irá enviar) -->
                     <option value="sugestao">Sugestão</option>
-                    <!-- <option> Opção dentro do menu suspenso (value é o valor que será enviado quando a opção for selecionada) -->
                     <option value="duvida">Dúvida</option>
                     <option value="parceria">Parceria</option>
                     <option value="outros">Outros</option>
@@ -208,22 +194,18 @@
 
                 <label for="mensagem">Mensagem: </label>
                 <textarea name="mensagem" id="mensagem" cols="40" rows="10" required></textarea>
-                <!-- <textarea> Área de texto (Campo para o usuário digitar sua mensagem) cols (número de colunas - largura do quadro de msg) rows (número de linhas - altura do quadro de msg) -->
 
                 <input type="checkbox" name="permissao" id="permissao">
-                <!-- <input> Campo de entrada (tipo: checkbox - caixa de seleção) -->
                 <label for="permissao">Autorizo o contato para fins profissionais.</label>
 
                 <input id="botao" type="submit" value="Enviar Mensagem">
-                <!-- <input> Botão de envio (tipo: submit - envia o formulário) -->
-
             </form>
 
         </section>
 
     </main>
 
-    <footer> <!-- Rodapé do site: direitos autorais -->
+    <footer>
         <p> &COPY; 2026 Bruna Fraga. Todos os direitos reservados.</p>
     </footer>
 

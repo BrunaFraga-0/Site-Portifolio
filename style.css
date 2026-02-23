@@ -1,105 +1,108 @@
 /* Importando uma fonte moderna do Google */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap');
 
-* { /* Seletor universal para aplicar estilos a todos os elementos do site */
-    margin: 0; /* Remove as margens padrão de todos os elementos para evitar espaçamento indesejado */
-    padding: 0; /* Remove o preenchimento padrão de todos os elementos para evitar espaçamento indesejado */
-    box-sizing: border-box; /* Define o modelo de caixa para incluir bordas e preenchimento no tamanho total do elemento, facilitando o controle do layout */
+* { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
 }
 
 body {
-    font-family: 'Inter', sans-serif; /* Define a fonte do corpo do site para uma aparência moderna e limpa */
-    background-color: #dee6f3; /* Cor de fundo profundo para melhor leitura */
-    color: #131f36; /* Cor do texto para garantir contraste e legibilidade */
+    font-family: 'Inter', sans-serif; 
+    background-color: #dee6f3; 
+    color: #131f36; 
     display: flex; 
     flex-direction: column;
     min-height: 100vh; /* 100% da altura da Viewport (tela) */
 }
 
 header, footer {
-    display: flex; /* Usa Flexbox para organizar o conteúdo do cabeçalho */
-    flex-direction: column; /* Organiza os itens do cabeçalho em uma coluna */
-    align-items: center; /* Centraliza os itens do cabeçalho horizontalmente */
-    padding: 20px; /* Adiciona preenchimento interno para melhorar a aparência do cabeçalho */
-    background-color: #131f36; /* Cor de fundo para o cabeçalho para destacá-lo do restante do site */
-    /*border-bottom: 2px solid #c1d18c; /* Adiciona uma borda inferior para separar visualmente o cabeçalho do conteúdo principal */
-    width: 100%; /* Faz o azul esticar até o fim da tela */    
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    padding: 20px; 
+    background-color: #131f36; 
+    width: 100%;   
 }
 
 header {
-    gap: 20px; /* Adiciona um espaço entre os itens do cabeçalho para melhor visualização */
-    position: sticky; /* Faz o cabeçalho ficar fixo no topo da página ao rolar */
-    top: 0; /* Define a posição do cabeçalho para o topo da página */
-    z-index: 1000; /* Garante que o cabeçalho fique acima de outros elementos ao rolar */
+    gap: 20px; 
+    position: sticky; 
+    top: 0; 
+    z-index: 1000; 
 }
 
 h1 {
-    display: flex; /* Usa Flexbox para organizar o título principal */
-    flex-direction: column; /* Organiza o título em uma coluna para melhor legibilidade */  
-    align-items: center; /* Centraliza o título horizontalmente */
-    text-align: center; /* Alinha o texto do título ao centro para uma aparência mais equilibrada */
-    font-size: xx-large; /* Define um tamanho de fonte grande para o título principal */
-    font-weight: bold; /* Define o peso da fonte como negrito para destacar o título principal */
-    margin: 10px 0; /* Adiciona um pouco de espaço para melhor legibilidade */
-    padding: 15px; /* Adiciona preenchimento interno para melhorar a aparência do título */
-    /*border: 2px solid #c1d18c; /* Adiciona uma borda leve para destacar o título principal */
-    border-radius: 5px; /* Arredonda os cantos da borda para um visual mais suave */
-    text-transform: uppercase; /* Transforma o texto em maiúsculas para destaque */
+    display: flex; 
+    flex-direction: column;   
+    align-items: center; 
+    text-align: center; 
+    font-size: xx-large; 
+    font-weight: bold; 
+    margin: 5px 0; 
+    padding: 8px; 
+    border-radius: 5px;
+    text-transform: uppercase; 
 }
 
 .titulo-categoria {
-    font-size: 0.5em; /* Metade do tamanho do H1 */
-    letter-spacing: 2px; /* Adiciona espaçamento entre as letras para um visual mais moderno */
-    color: #c1d18c; /* Cor para a categoria do título (amarelo) */
+    font-size: 0.5em;
+    letter-spacing: 2px; 
+    color: #c1d18c; 
 }
 
 .titulo-nome {
-    font-size: 1.2em; /* Tamanho maior para o nome */
-    color: #dee6f3; /* Cor de fundo profundo para melhor leitura */
-; /* Cor para o nome (branco) */
+    font-size: 1.2em; 
+    color: #dee6f3; 
 }
 
 .menu-principal {
-    display: flex; /* Usa Flexbox para organizar os itens do menu em linha */
-    justify-content: center; /* Centraliza os itens do menu horizontalmente */
-    gap: 20px; /* Adiciona um espaço entre os itens do menu para melhor visualização */
-    list-style: none; /* Remove os marcadores padrão da lista para um visual mais limpo */
+    display: flex; 
+    justify-content: center; 
+    gap: 20px; 
+    list-style: none; 
 }
 
-.menu-principal a { /* Estilo para os links do menu principal usando o seletor classe e descendência */
+.menu-principal a { 
     font-size: large;
-    text-transform: uppercase; /* Transforma o texto em maiúsculas para destaque */
-    transition: 0.3s; /* Adiciona uma transição suave para efeitos de hover */
+    text-transform: uppercase; 
+    transition: 0.3s; 
 }
 
 main {
-    flex: 1; /* Faz o conteúdo crescer e empurrar o footer para o final da tela */
-    width: 100%; /* Faz a cor esticar até o fim da tela */  
-    max-width: 800px; /* Mantém o texto centralizado e fácil de ler */
-    margin: 0 auto; /* Centraliza o bloco principal */
+    flex: 1; 
+    width: 100%; 
+    max-width: 800px;
+    margin: 0 auto; 
     display: flex;
-    flex-direction: column; /* Garante que as seções fiquem uma embaixo da outra */
-    gap: 40px; /* Cria um espaço uniforme entre as seções (Sobre Mim, Projetos, etc) */
-    padding: 20px 0; /* Espaço em cima e embaixo para não colar no header/footer */
+    flex-direction: column; 
+    gap: 0;
 }
 
-
 section {
-    padding: 20px; /* Espaçamento interno para melhor visualização, para o texto não encostar na borda*/
-    margin: 0 auto; /* Centraliza esses blocos */
-    max-width: 800px; /* Limita a largura para melhor leitura (não esticar demais em telas grandes) */
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    padding: 20px 20px; 
+    margin: 0 auto;
+    max-width: 800px;
     width: 100%;
 }
 
+[id] {
+   scroll-margin-top: 160px !important; 
+}
+
 h2 {
-    text-align: left; /* Alinha o texto à esquerda para uma leitura mais tradicional */
+    width: 100%;
+    text-align: left; 
     font-size: x-large;
     font-weight: bold;
     color:  #c1d18c;
-    margin: 5px; /* Adiciona um pouco de espaço para melhor legibilidade */
-    padding: 10px; /* Adiciona preenchimento interno para melhorar a aparência dos títulos secundários */
-    border: 1px solid #c1d18c; /* Adiciona uma borda leve para destacar os títulos secundários */
-    border-radius: 5px; /* Arredonda os cantos da borda para um visual mais suave */
+    margin: 0 0 20px 0;
+    padding: 15px; 
+    border: 1px solid #c1d18c; 
+    border-radius: 5px; 
     background-color: #131f36;
 }
 
@@ -112,7 +115,7 @@ h2 {
 
 
 .flexbox-sobre-mim img {
-    width: 200px; /* Define a largura da imagem para um tamanho adequado */
+    width: 200px; 
     padding: 10px;
     flex-shrink: 1;
     border-radius: 15px;
@@ -124,11 +127,8 @@ h2 {
 
 p {
     text-align: justify;
-    margin: 5px; /* Adiciona um pouco de espaço entre os parágrafos para melhor legibilidade */
-    padding: 10px; /* Adiciona preenchimento interno para melhorar a aparência dos parágrafos */
-    /*background-color: #c1d18c; /* Cor de fundo clara para os parágrafos para melhorar a legibilidade */
-    /*border: 1px solid #131f36; /* Adiciona uma borda leve para destacar os parágrafos */
-    /*border-radius: 5px; */ /* Arredonda os cantos da borda para um visual mais suave */
+    margin: 5px; 
+    padding: 10px; 
 }
 
 #softskill {
@@ -139,7 +139,6 @@ p {
     font-size: 2em;
     margin: 20px;
 }
-
 
 .softskill-lista {
     list-style: none;
@@ -157,15 +156,14 @@ p {
     padding: 10px 10px;
 }
 
-
 .table {
+    width: 100%;
     max-width: 500px;
     border-collapse: collapse;
-    margin: 0 auto;
+    margin: 0 auto 0 auto;
     background-color: #131f36;
     border-radius: 5px;
-    overflow: hidden; /*Garante as bordas arredondadas nas células*/
-    /*box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Uma sombra leve pra dar profundidade*/
+    overflow: hidden; 
 }
 
 #table-head {
@@ -176,7 +174,6 @@ p {
 #table-head th {
     color: #c1d18c;
 }
-
 
 th, td {
     padding: 10px 15px;
@@ -190,24 +187,21 @@ th, td {
 }
 
 
-
-a { /* Estilo para links */
-    color: #c1d18c; /* Cor dos links (amarelo) */
-    text-decoration: none; /* Remove o sublinhado dos links para um visual mais limpo */
+a { 
+    color: #c1d18c; 
+    text-decoration: none; 
 }
 
-
-a:hover { /* Estilo para links quando o mouse passa por cima */
-    text-decoration: underline; /* Adiciona um sublinhado quando o mouse passa por cima para indicar que é clicável */
-    color: white; /* Muda a cor do link para branco quando o mouse passa por cima para destacar */
+a:hover { 
+    text-decoration: underline; 
+    color: white; 
 }
-
-/*background-color:cadetblue;*/
 
 .projetos-container {
     display: flex;
-    justify-content: center; /* Centraliza o card horizontalmente */
-    padding: 20px 0;
+    justify-content: center; 
+    width: 100%;
+    margin-bottom: 0;
 }
 
 #projetos h3 {
@@ -215,17 +209,17 @@ a:hover { /* Estilo para links quando o mouse passa por cima */
     font-size: large;
     font-weight: bold;
     text-decoration: underline;
-    margin: 5px; /* Adiciona um pouco de espaço para melhor legibilidade */
-    padding: 2px 0; /* Adiciona preenchimento interno para melhorar a aparência dos subtítulos */
+    margin: 5px; 
+    padding: 2px 0; 
 }
 
 .projeto-screenshot {
-    width: 100%;           /* Ocupa toda a largura interna do card */
-    max-height: 300px;     /* Evita que a imagem fique muito alta */
-    object-fit: cover;    /* Corta a imagem de forma inteligente para preencher o espaço */
-    border-radius: 10px;   /* Arredonda as bordas para combinar com o card */
-    margin: 15px 0;        /* Dá um espaço em cima e embaixo da foto */
-    border: 1px solid #c1d18c; /* Uma borda fininha para destacar a imagem */
+    width: 100%;          
+    max-height: 300px;    
+    object-fit: cover;    
+    border-radius: 10px;   
+    margin: 15px 0;        
+    border: 1px solid #c1d18c; 
 }
 
 .projeto-card {
@@ -234,17 +228,15 @@ a:hover { /* Estilo para links quando o mouse passa por cima */
     border: 2px solid #c1d18c;
     border-radius: 15px;
     padding: 25px;
-    max-width: 600px; /* Limita a largura para o texto não ficar muito esticado */
+    max-width: 600px; 
     text-align: center;
     transition: 0.3s;
 }
 
-/* Efeito de iluminação igual aos contatos */
 .projeto-card:hover {
     outline: 5px solid #c1d18c;
-    transform: scale(1.01); /* Leve aumento para dar profundidade */
+    transform: scale(1.01); 
 }
-
 
 .p-contato, .contato-lista{
     display: flex;
@@ -279,17 +271,14 @@ a:hover { /* Estilo para links quando o mouse passa por cima */
     font-size: small;
 }
 
-
-
 form {
     display: flex;
     flex-direction: column;
     gap: 5px;
-    max-width: 500px; /* Mantém o formulário em um tamanho bom */
-    margin: 0 auto;   /* Centraliza o formulário na página */
-    align-items: flex-start; /* Isso impede que o botão estique para a largura toda */
+    max-width: 500px; 
+    margin: 0 auto;   
+    align-items: flex-start; 
 }
-
 
 label {
     display: block; 
@@ -305,11 +294,10 @@ input, select, textarea {
     color: #131f36;
     border: 1px solid #131f36;
     border-radius: 8px;
-    box-sizing: border-box; /* Garante que o padding não aumente a largura */
+    box-sizing: border-box; 
 }
 
-
-input:focus, textarea:focus { /* Efeito de foco para quando você clica no campo */
+input:focus, textarea:focus { 
     outline: none;
     box-shadow: 0 0 10px #c1d18c;
 }
@@ -319,7 +307,6 @@ input[type="checkbox"] {
     display: inline-block;
     margin-right: 10px;
 }
-
 
 #botao {
     background-color: #131f36;
@@ -333,11 +320,11 @@ input[type="checkbox"] {
 }
 
 #botao:hover {
-    transform: scale(1.02); /* Dá um leve aumento ao passar o mouse */
+    transform: scale(1.02); 
     outline: 5px solid #c1d18c;
 }
 
 footer {
-    margin-top: auto; /* Garante que fique no fim da página */
+    margin-top: auto; 
     color: #c1d18c; 
 }
