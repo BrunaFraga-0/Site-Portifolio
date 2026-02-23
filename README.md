@@ -17,9 +17,10 @@ O site consiste em uma página de portfólio que apresenta minha trajetória, tr
 - **Seção Sobre Mim**: Texto sobre minha transição de carreira da agricultura para a tecnologia e meus objetivos na área de tecnologia.
 - **Softskills**: Uma seção lateral (`<aside>`) destacando minhas competências comportamentais como organização e proatividade.
 - **Integração de Mídia**: Adição de foto de perfil com caminhos relativos.
-- **Habilidades e Tecnologias**: Uma tabela estruturada com `<table>` listando meu nível de conhecimento em HTML, CSS e JavaScript.
+- **Habilidades Técnicas**: Uma tabela estruturada com `<table>` listando meu nível de conhecimento em HTML, CSS e JavaScript.
 - **Formulário de Contato Completo**: Implementação de um formulário com campos de Nome, E-mail, WhatsApp, Assunto (menu suspenso), Área de Mensagem e Checkbox de autorização.
 - **Links Interativos**: Botões diretos para WhatsApp, LinkedIn, E-mail e GitHub.
+- **Formulário de Contato Inteligente:** Implementação de um formulário funcional integrado ao Formspree, permitindo o recebimento de mensagens diretamente no e-mail sem a necessidade de um servidor de e-mail próprio.
 
 ### 🎨 **Estilização e Design (Fase Inicial de CSS)**
 Nesta etapa, o foco foi transformar a estrutura bruta em uma interface mais amigável e legível:
@@ -32,24 +33,29 @@ Nesta etapa, o foco foi transformar a estrutura bruta em uma interface mais amig
 - **Paleta de Cores Customizada:** Implementação de um fundo profundo (#131f36) com destaques em tons pastéis (#c1d18c), garantindo um contraste sofisticado e profissional.
 - **Integração de Imagem com Float:** Implementação da propriedade float: left na foto de perfil para permitir o envolvimento do texto, com ajustes de margin e padding para garantir o distanciamento correto entre a imagem e os parágrafos.
 
+
+### 🎨 **Estilização e Design (CSS Avançado)**
+- A interface foi evoluída para um design moderno e totalmente responsivo para o seu MacBook Pro de 13" e dispositivos móveis:
+
+- **Layout Flexbox:** Organização de seções e alinhamento de elementos utilizando Flex Container para garantir flexibilidade.
+
+- **Design Responsivo (Mobile First):** Implementação de Media Queries para adaptação automática em celulares e tablets.
+
+- **Menu Sanduíche:** Criação de um menu interativo e compacto para dispositivos móveis.
+
+- **Estilização de Tabela:** Adição de rolagem horizontal (overflow-x: auto) para evitar quebras em telas pequenas.
+
+- **Paleta de Cores e Tipografia:** Uso da fonte Inter e contraste otimizado entre o fundo profundo (#131f36) e tons pastéis (#c1d18c).
+
+
+### ⚙️ **Interatividade (JavaScript)**
+- **Validação de Formulário:** Lógica para garantir que o nome tenha ao menos 3 caracteres, validação de e-mail via Regex e obrigatoriedade de campos.
+
+- **Manipulação do DOM:** Script para abrir e fechar o menu sanduíche dinamicamente.
+
+
 ### 📝 **Próximos Passos (Backlog)**
-**[ ] Ajuste de Tabela:** Melhorar a legibilidade da tabela de habilidades com bordas sutis e preenchimento (padding).
-
-**[ ] Estilização da Imagem:** Aplicar bordas arredondadas e efeitos na foto de perfil para uma melhor integração visual.
-
-**[ ] Ajustes de Tipografia:** Configurar o line-height (espaçamento entre linhas) para tornar a leitura dos parágrafos mais fluida.
-
-**[ ] Layout Moderno (Cards):** Separar as seções em blocos visuais distintos com fundos brancos e sombras suaves.
-
-**[ ] Menu Responsivo:** Utilizar Flexbox para alinhar o menu horizontalmente e garantir que funcione bem em celulares.
-
-**[ ] Lógica com JavaScript:**
-
-    [ ] Implementar validação personalizada no formulário de contato.
-
-    [ ] Adicionar um botão de "Voltar ao Topo".
-
-    [ ] Criar um modo escuro (Dark Mode) para alternar o tema do site.
+[ ] Desenvolvimento de Back-end: Construir uma API REST utilizando Node.js e TypeScript para processar os dados do formulário, implementar autenticação e gerenciar a persistência de mensagens em um banco de dados.
 
 ---
 
@@ -83,7 +89,7 @@ Você pode acompanhar a evolução do site através deste link:
 
 ---
 
-📅 *Atualizado em 07 de Fevereiro de 2026*
+📅 *Atualizado em 23 de Fevereiro de 2026*
 
 ---
 
