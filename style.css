@@ -69,6 +69,72 @@ h1 {
     transition: 0.3s; 
 }
 
+/* Ajustes exclusivos para telas de celular (até 768px) */
+@media screen and (max-width: 768px) {
+    
+    /* 1. CABEÇALHO: Empilha o nome e o menu para não espremer */
+    header {
+        padding: 15px 10px;
+        position: relative; /* tira o fixo no celular se ocupar muita tela */
+    }
+
+    h1 {
+        font-size: 1.2rem; /* Diminui o tamanho da fonte do nome */
+        margin-bottom: 10px;
+    }
+
+    .menu-principal {
+        flex-direction: column; /* Transforma o menu em lista vertical */
+        gap: 12px;
+        width: 100%;
+        padding: 10px 0;
+        border-top: 1px solid #c1d18c55; /* Divisória sutil */
+    }
+
+    /* 2. TABELA: Cria rolagem lateral para não quebrar o layout */
+    .table {
+        display: block;
+        width: 100%;
+        overflow-x: auto; /* Permite deslizar a tabela com o dedo */
+        white-space: nowrap; /* Impede que o texto quebre linhas de forma feia */
+    }
+
+    /* 3. RODAPÉ: Garante centralização e respiro */
+    footer {
+        padding: 20px;
+        font-size: 0.8rem;
+    }
+}
+
+/* Esconde o botão do menu no computador */
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: #c1d18c;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .menu-toggle {
+        display: block; /* Mostra o botão no celular */
+    }
+
+    .menu-principal {
+        display: none; /* Esconde a lista por padrão no celular */
+        flex-direction: column;
+        width: 100%;
+        background-color: #131f36;
+        padding: 20px 0;
+    }
+
+    /* Classe que o JavaScript vai "ligar" e "desligar" */
+    .menu-principal.ativo {
+        display: flex; /* Mostra o menu quando estiver ativo */
+    }
+}
+
 main {
     flex: 1; 
     width: 100%; 

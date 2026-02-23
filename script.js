@@ -56,3 +56,20 @@ document.getElementById("formulario").addEventListener("submit", function (event
         alert("Formulário validado! Enviando sua mensagem...");
     }
 });
+
+// --- LÓGICA DO MENU SANDUÍCHE ---
+
+const menuToggle = document.querySelector('.menu-toggle');
+const menuPrincipal = document.querySelector('.menu-principal');
+
+// Abre e fecha o menu ao clicar no botão de três barrinhas
+menuToggle.addEventListener('click', () => {
+    menuPrincipal.classList.toggle('ativo');
+});
+
+// Fecha o menu automaticamente ao clicar em um link (melhora a UX no celular)
+document.querySelectorAll('.menu-principal a').forEach(link => {
+    link.addEventListener('click', () => {
+        menuPrincipal.classList.remove('ativo');
+    });
+});
