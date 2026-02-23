@@ -55,7 +55,8 @@ h1 {
 
 .titulo-nome {
     font-size: 1.2em; /* Tamanho maior para o nome */
-    color: #ffffff; /* Cor para o nome (branco) */
+    color: #dee6f3; /* Cor de fundo profundo para melhor leitura */
+; /* Cor para o nome (branco) */
 }
 
 .menu-principal {
@@ -152,38 +153,43 @@ p {
     background-color: #131f36;
     color: #c1d18c;
     border: 1px solid #c1d18c;
-    border-radius: 10px;
+    border-radius: 15px;
     padding: 10px 10px;
 }
 
 
+.table {
+    max-width: 500px;
+    border-collapse: collapse;
+    margin: 0 auto;
+    background-color: #131f36;
+    border-radius: 5px;
+    overflow: hidden; /*Garante as bordas arredondadas nas células*/
+    /*box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Uma sombra leve pra dar profundidade*/
+}
 
+#table-head {
+    background-color: #131f36;
+    font-size: large;
+}
 
-
-
-aside h3 {
-
+#table-head th {
+    color: #c1d18c;
 }
 
 
-aside ul li {
+th, td {
+    padding: 10px 15px;
+    text-align: center;
+    color: #dee6f3;
+    border-bottom: 1px solid #c1d18c55;
+}
 
+#table-body {
+    background-color: #252c3874;
 }
 
 
-table {
-
-}
-
-
-thead {
-
-}
-
-
-tbody {
-
-}
 
 
 tr {
