@@ -236,9 +236,39 @@ a:hover { /* Estilo para links quando o mouse passa por cima */
 }
 
 
-address {
-
+.p-contato, .contato-lista{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 15px;
 }
+
+.contato-item {
+    background-color: #131f36;
+    color: #dee6f3;
+    border: 2px solid #c1d18c;
+    border-radius: 15px;
+    padding: 20px 30px;
+    transition: 0.3s;
+}
+
+.contato-item:hover {
+    outline: 5px solid #c1d18c;
+}
+
+.contato-item strong {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.contato-item a {
+    font-size: small;
+}
+
 
 
 form {
