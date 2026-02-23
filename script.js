@@ -1,0 +1,57 @@
+function validacaoFormulario() {
+  // Seleciona os elementos
+  const campoNome = document.getElementById("nome");
+  const campoEmail = document.getElementById("email");
+  const campoMensagem = document.getElementById("mensagem");
+
+  // Validar campos obrigatórios
+  if (nome === "" || email === "" || mensagem === "") {
+    alert("ATENÇÃO: Campos são obrigatórios (nome, e-mail, mensagem)");
+    // Alterar cor do campo para vermelho dos que estiverem vazios
+    if (campoNome.value.trim() === "") campoNome.style.borderColor = "red";
+    if (campoEmail.value.trim() === "") campoEmail.style.borderColor = "red";
+    if (campoMensagem.value.trim() === "")
+      campoMensagem.style.borderColor = "red";
+    return false; // INTERROMPE O ENVIO DO FORMULÁRIO
+  }
+
+  // Resetar as bordas antes de validar novamente
+  [campoNome, campoEmail, campoMensagem].forEach((campo) => {
+    campo.style.borderColor = "#131f36"; // Volta para a cor padrão definida no CSS
+  });
+
+  // Validar Nome
+  if (campoNome.value.trim().length < 3) {
+    // value.trim para remover espaços em branco no início e fim de strings
+    alert("ATENÇÃO: o nome deve ter pelo menos 3 caracteres");
+    campoNome.style.borderColor = "red";
+    campoNome.focus(); // pra levar o cursor do usuário novamente para o campo onde o alerta foi disparado
+    return false;
+  }
+
+  // Validar E-mail com Regex
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (!emailRegex.test(campoEmail.value)) {
+    alert("Por favor, insira um e-mail válido");
+    campoEmail.style.borderColor = "red";
+    campoEmail.focus();
+    return false;
+  }
+
+  // Validar Mensagem
+  if (campoMensagem.value.trim() === "") {
+    alert("Por favor, escreva sua mensagem");
+    campoMensagem.style.borderColor = "red";
+    campoMensagem.focus();
+    return false;
+  }
+
+  return true;
+}
+
+document.getElementById("formulario").addEventListener("submit", function (evento) {
+    evento.preventDefault();
+    if (validacaoFormulario()) {
+      alert("Formulário validado!");
+    }
+  });

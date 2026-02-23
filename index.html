@@ -142,7 +142,8 @@
             <div class="projetos-container">
                 <article class="projeto-card">
                     <h3>Landing Page Portifólio</h3>
-                    <img src="imagens/Foto-projeto-portfolio.jpg" alt="Screenshot do site portfólio" class="projeto-screenshot">
+                    <img src="imagens/Foto-projeto-portfolio.jpg" alt="Screenshot do site portfólio"
+                        class="projeto-screenshot">
                     <p>
                         Desenvolvimento de um portfólio pessoal focado em semântica HTML5 e layouts modernos com CSS
                         Flexbox. Este projeto faz parte da minha transição de carreira e estudos no programa SCTec.
@@ -181,14 +182,14 @@
 
             <p class="p-contato">Ou envie diretamente uma mensagem: </p>
 
-            <form action=""> <!-- <form> Formulário de contato (Envio de mensagens) -->
+            <form id="formulario" novalidate action=""> <!-- <form> Formulário de contato (Envio de mensagens) -->
 
                 <label for="nome">Nome: </label> <!-- <label> Rótulo para o campo de entrada (Nome) -->
                 <input type="text" id="nome" name="nome" required>
                 <!-- <input> Campo de entrada (tipo: nesse caso é texto - tem email, tel...) type (tipo de campo) id (identificador único) name (nome do campo para envio de dados) required(campo de preenchimento obrigatório)-->
 
                 <label for="email">E-mail: </label>
-                <input type="email" id="email" name="email" required>
+                <input type="email" id="email" name="email" placeholder="nome@email.com" required>
 
                 <label for="whatsapp">WhatsApp: </label>
                 <input type="tel" id="whatsapp" name="whatsapp" placeholder="(XX) XXXXX-XXXX">
@@ -225,6 +226,7 @@
         <p> &COPY; 2026 Bruna Fraga. Todos os direitos reservados.</p>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 
 </html>
