@@ -34,11 +34,12 @@
             <h2>Sobre Mim</h2> <!-- Título de segundo nível (Menor)-->
 
             <div class="flexbox-sobre-mim">
-                <img src="imagens/foto de perfil - site.jpeg" alt="Minha Foto de Perfil" title="Imagem de perfil de Bruna">
+                <img src="imagens/foto de perfil - site.jpeg" alt="Minha Foto de Perfil"
+                    title="Imagem de perfil de Bruna">
                 <!-- <img> Imagem (Foto de Perfil)-->
                 <!-- src source (caminho da imagem) alt (texto alternativo se a imagem não carregar) -->
                 <!-- title (nome da imagem ao passar o cursor por cima)-->
-            
+
                 <article id="texto-sobre-mim"> <!-- Artigo (Cria texto) -->
                     <p> <!-- Parágrafo (Cria novo parágrafo) -->
                         Olá, eu sou Bruna! Estudante de Análise e Desenvolvimento de Sistemas na Estácio (2º semestre) e
@@ -47,28 +48,32 @@
                         as
                         soluções que facilitam nossas vidas são construídas e poder fazer parte dessas construções.
                     </p>
-            
+
                     <p>
                         Atualmente, participo do processo seletivo para o Programa SCTec (2026) no eixo de formação
                         "Carreira
                         Tech - Etapa Profissionalizar", uma iniciativa da Secretaria de Tecnologia do Governo de Santa
                         Catarina
                         (SCTI/SC)
-                        em parceria com o SENAI. Neste curso introdutório, Etapa Primeiros Passos, estou aprendendo sobre
+                        em parceria com o SENAI. Neste curso introdutório, Etapa Primeiros Passos, estou aprendendo
+                        sobre
                         Front-end e Back-end,
-                        inclusive esse site faz parte do processo de colocar meus conhecimentos adquiridos nesse processo em
+                        inclusive esse site faz parte do processo de colocar meus conhecimentos adquiridos nesse
+                        processo em
                         prática.
                     </p>
-            
+
                     <p>
                         Tenho grande interesse por Engenharia de Software, especialmente em desenvolvimento back-end com
                         foco na
                         linguagem Java.
                     </p>
-            
+
                     <p>
-                        Sou engajada, detalhista e colaborativa, com facilidade para aprender, curiosidade constante e muita
-                        motivação para crescer na área tecnológica. Estou no início da minha jornada, mas com muito foco e
+                        Sou engajada, detalhista e colaborativa, com facilidade para aprender, curiosidade constante e
+                        muita
+                        motivação para crescer na área tecnológica. Estou no início da minha jornada, mas com muito foco
+                        e
                         dedicação.
                         Acredito que o aprendizado constante é a chave para se tornar um profissional qualificado e
                         experiente.
@@ -78,9 +83,9 @@
                         especialistas e evoluir como uma desenvolvedora sólida e qualificada.
                     </p>
                 </article>
-            
+
             </div>
-            
+
             <aside id="softskill"> <!-- Seção lateral (Informações adicionais) -->
                 <h3>Softskills:</h3> <!-- Título de terceiro nível (Menor - Subtítulo)-->
                 <ul class="softskill-lista">
@@ -134,12 +139,18 @@
         <section id="projetos"> <!-- id para linkar a seção de projetos -->
             <h2>Projetos</h2>
 
-            <article>
-                <h3>Portifólio</h3>
-                <p>
-                    Este é o primeiro site que estou desenvolvendo estudando front-end.
-                </p>
-            </article>
+            <div class="projetos-container">
+                <article class="projeto-card">
+                    <h3>Landing Page Portifólio</h3>
+                    <img src="imagens/Foto-projeto-portfolio.jpg" alt="Screenshot do site portfólio" class="projeto-screenshot">
+                    <p>
+                        Desenvolvimento de um portfólio pessoal focado em semântica HTML5 e layouts modernos com CSS
+                        Flexbox. Este projeto faz parte da minha transição de carreira e estudos no programa SCTec.
+                    </p>
+                    <a href="https://github.com/BrunaFraga-0/Site-Portifolio" target="_blank" class="botao-projeto">Ver
+                        Repositório no GitHub</a>
+                </article>
+            </div>
         </section>
 
 
@@ -151,20 +162,21 @@
             <address class="contato-lista"> <!-- <adress> Informações de contato (E-mail, telefone, etc) -->
                 <div class="contato-item">
                     <strong>E-mail:</strong>
-                    <a href="mailto:brunafraga90@gmail.com">brunafraga90@gmail.com</a> 
+                    <a href="mailto:brunafraga90@gmail.com">brunafraga90@gmail.com</a>
                 </div>
                 <div class="contato-item">
                     <strong>Whatsapp:</strong>
-                     <a href="https://wa.me/5548988776860">(48) 98877-6860</a> 
+                    <a href="https://wa.me/5548988776860">(48) 98877-6860</a>
                 </div>
                 <div class="contato-item">
                     <strong>LinkedIn:</strong>
-                    <a href="https://www.linkedin.com/in/bruna-c-fraga/">https://www.linkedin.com/in/bruna-c-fraga</a> <br>
+                    <a href="https://www.linkedin.com/in/bruna-c-fraga/">https://www.linkedin.com/in/bruna-c-fraga</a>
+                    <br>
                 </div>
                 <div class="contato-item">
                     <strong>GitHub:</strong>
-                     <a href="https://github.com/BrunaFraga-0">BrunaFraga-0</a>
-                </div>  
+                    <a href="https://github.com/BrunaFraga-0">BrunaFraga-0</a>
+                </div>
             </address>
 
             <p class="p-contato">Ou envie diretamente uma mensagem: </p>
@@ -202,7 +214,7 @@
 
                 <input id="botao" type="submit" value="Enviar Mensagem">
                 <!-- <input> Botão de envio (tipo: submit - envia o formulário) -->
-                
+
             </form>
 
         </section>

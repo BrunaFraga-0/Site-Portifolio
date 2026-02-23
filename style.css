@@ -191,22 +191,6 @@ th, td {
 
 
 
-
-tr {
-
-}
-
-
-th {
-
-}
-
-
-td {
-
-}
-
-
 a { /* Estilo para links */
     color: #c1d18c; /* Cor dos links (amarelo) */
     text-decoration: none; /* Remove o sublinhado dos links para um visual mais limpo */
@@ -220,10 +204,11 @@ a:hover { /* Estilo para links quando o mouse passa por cima */
 
 /*background-color:cadetblue;*/
 
-#projetos article {
-
+.projetos-container {
+    display: flex;
+    justify-content: center; /* Centraliza o card horizontalmente */
+    padding: 20px 0;
 }
-
 
 #projetos h3 {
     text-align: left;
@@ -232,7 +217,32 @@ a:hover { /* Estilo para links quando o mouse passa por cima */
     text-decoration: underline;
     margin: 5px; /* Adiciona um pouco de espaço para melhor legibilidade */
     padding: 2px 0; /* Adiciona preenchimento interno para melhorar a aparência dos subtítulos */
+}
 
+.projeto-screenshot {
+    width: 100%;           /* Ocupa toda a largura interna do card */
+    max-height: 300px;     /* Evita que a imagem fique muito alta */
+    object-fit: cover;    /* Corta a imagem de forma inteligente para preencher o espaço */
+    border-radius: 10px;   /* Arredonda as bordas para combinar com o card */
+    margin: 15px 0;        /* Dá um espaço em cima e embaixo da foto */
+    border: 1px solid #c1d18c; /* Uma borda fininha para destacar a imagem */
+}
+
+.projeto-card {
+    background-color: #131f36;
+    color: #dee6f3;
+    border: 2px solid #c1d18c;
+    border-radius: 15px;
+    padding: 25px;
+    max-width: 600px; /* Limita a largura para o texto não ficar muito esticado */
+    text-align: center;
+    transition: 0.3s;
+}
+
+/* Efeito de iluminação igual aos contatos */
+.projeto-card:hover {
+    outline: 5px solid #c1d18c;
+    transform: scale(1.01); /* Leve aumento para dar profundidade */
 }
 
 
